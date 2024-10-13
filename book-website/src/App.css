@@ -4,18 +4,21 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #000; /* Чорний фон для всього додатка */
+  color: #fff; /* Білий текст для покращення видимості на чорному фоні */
+  min-height: 100vh; /* Мінімальна висота, щоб зайняти всю видиму частину вікна */
 }
 
 header {
-  background-color: #f8f8f8;
+  background-color: #1a1a1a; /* Темніший фон для хедера */
   padding: 10px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #444; /* Темніша рамка */
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #333;
+  color: #fff; /* Білий текст для навігаційних посилань */
 }
 
 main {
@@ -23,10 +26,11 @@ main {
 }
 
 footer {
-  background-color: #f8f8f8;
+  background-color: #1a1a1a; /* Темніший фон для футера */
   padding: 10px 0;
-  border-top: 1px solid #ccc;
-  position: fixed;
-  bottom: 0;
+  border-top: 1px solid #444; /* Темніша рамка */
   width: 100%;
+  color: #fff; /* Білий текст для футера */
+  position: relative; /* Відновлено до стандартного поведінки */
+  margin-top: auto; /* Додано для того, щоб футер завжди був внизу, якщо контент невеликий */
 }

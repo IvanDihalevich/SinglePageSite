@@ -1,0 +1,89 @@
+.book-details {
+    background-color: #000; /* Чорний фон */
+    color: #fff; /* Білий текст */
+    min-height: 100vh; /* Висота сторінки */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.book-content {
+    display: grid; /* Змінено на grid для двох колонок */
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    gap: 20px; /* Відступ між елементами */
+    max-width: 800px; /* Максимальна ширина контейнера */
+    width: 100%; /* Займає всю доступну ширину */
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-image {
+    width: 350px; /* Зменшена ширина зображення */
+    height: auto; /* Автоматичне регулювання висоти */
+    border: 2px solid #ffff; /* Синя рамка навколо зображення */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.book-description {
+    font-size: 18px;
+    max-width: 500px; /* Обмеження ширини тексту */
+}
+
+.divider {
+    border: none;
+    height: 2px; /* Висота риски */
+    background-color: #61dafb; /* Колір риски */
+    margin: 40px 0; /* Відступи навколо риски */
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Відступи між блоками */
+}
+
+.section-item {
+    display: flex;
+    align-items: center; /* Вирівнювання по центру */
+    background-color: #1c1c1c; /* Тло для нових блоків */
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 10px; /* Закруглені краї */
+    width: 100%; /* Займає всю ширину */
+    max-height: 200px; /* Обмеження висоти */
+    overflow: hidden; /* Сховати переповнені частини */
+}
+
+.section-image {
+    width: auto; /* Автоматичне регулювання ширини */
+    height: 100%; /* Висота займає всю доступну висоту блока */
+    max-width: 150px; /* Максимальна ширина для зображення */
+    object-fit: contain; /* Зберегти пропорції зображення */
+    margin-right: 20px; /* Відступ між зображенням та текстом */
+}
+
+.section-text {
+    flex: 1; /* Займає всю доступну ширину */
+}
+
+.section-link {
+    color: gray; /* Змінено на сірий колір */
+    font-style: italic; /* Зроблено курсивом */
+    text-decoration: underline; /* Підкреслення */
+}
+
+.section-link:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
