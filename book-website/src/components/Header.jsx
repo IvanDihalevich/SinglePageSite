@@ -10,16 +10,16 @@ const Header = () => (
   <div className="top-row">
     <div className="left-section">
       <div className="social-icons">
-        <a href="#" aria-label="Youtube">
+        <a href="https://www.youtube.com/@harrypotter" aria-label="Youtube">
           <img src={FaYoutube} alt="Youtube" />
         </a>
-        <a href="#" aria-label="Tiktok">
+        <a href="https://www.tiktok.com/discover/HarryPotter" aria-label="Tiktok">
           <img src={FaTiktok} alt="Tiktok" />
         </a>
-        <a href="#" aria-label="Telegram">
+        <a href="https://t.me/HarryPotterChanel934" aria-label="Telegram">
           <img src={FaTelegram} alt="Telegram" />
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="https://www.instagram.com/harrypotter/" aria-label="Instagram">
           <img src={FaInstagram} alt="Instagram" />
         </a>
       </div>

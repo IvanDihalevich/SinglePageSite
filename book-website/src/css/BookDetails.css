@@ -1,89 +1,165 @@
 .book-details {
-    background-color: #000; /* Чорний фон */
-    color: #fff; /* Білий текст */
-    min-height: 100vh; /* Висота сторінки */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+  background-color: #000; /* Чорний фон */
+  color: #fff; /* Білий текст */
+  min-height: 100vh; /* Висота сторінки */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
+  margin-bottom: 40px;
+  font-size: 36px;
 }
 
 .book-content {
-    display: grid; /* Змінено на grid для двох колонок */
-    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
-    gap: 20px; /* Відступ між елементами */
-    max-width: 800px; /* Максимальна ширина контейнера */
-    width: 100%; /* Займає всю доступну ширину */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .book-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .book-image {
-    width: 350px; /* Зменшена ширина зображення */
-    height: auto; /* Автоматичне регулювання висоти */
-    border: 2px solid #ffff; /* Синя рамка навколо зображення */
-    border-radius: 10px;
-    margin-bottom: 20px;
+  width: 350px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .book-description {
-    font-size: 18px;
-    max-width: 500px; /* Обмеження ширини тексту */
-}
-
-.divider {
-    border: none;
-    height: 2px; /* Висота риски */
-    background-color: #61dafb; /* Колір риски */
-    margin: 40px 0; /* Відступи навколо риски */
+  font-size: 18px;
+  max-width: 500px;
 }
 
 .section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Відступи між блоками */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .section-item {
-    display: flex;
-    align-items: center; /* Вирівнювання по центру */
-    background-color: #1c1c1c; /* Тло для нових блоків */
-    padding: 20px; /* Внутрішні відступи */
-    border-radius: 10px; /* Закруглені краї */
-    width: 100%; /* Займає всю ширину */
-    max-height: 200px; /* Обмеження висоти */
-    overflow: hidden; /* Сховати переповнені частини */
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .section-image {
-    width: auto; /* Автоматичне регулювання ширини */
-    height: 100%; /* Висота займає всю доступну висоту блока */
-    max-width: 150px; /* Максимальна ширина для зображення */
-    object-fit: contain; /* Зберегти пропорції зображення */
-    margin-right: 20px; /* Відступ між зображенням та текстом */
+  width: auto;
+  height: 100%;
+  max-width: 150px;
+  object-fit: contain;
+  margin-right: 20px;
 }
 
 .section-text {
-    flex: 1; /* Займає всю доступну ширину */
+  flex: 1;
 }
 
 .section-link {
-    color: gray; /* Змінено на сірий колір */
-    font-style: italic; /* Зроблено курсивом */
-    text-decoration: underline; /* Підкреслення */
+  color: gray;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .section-link:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+  text-decoration: underline;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.author-image {
+  width: auto;
+  height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.author-description {
+  color: #fff;
+  text-align: left;
+}
+
+.author-description h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.author-description p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.divider {
+  position: relative;
+  border: none;
+  height: 1px;
+  width: 40%;
+  background-color: #ffff;
+  margin: 50px;
+}
+
+.divider::before {
+  content: "\2731"; /* Можна змінити на будь-який інший символ або додати картинку */
+  position: absolute;
+  top: -12px; /* Вирівнює по вертикалі */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000; /* Зробимо фон таким самим, як у основного контейнера */
+  padding: 0 10px;
+  font-size: 24px; /* Розмір орнаменту */
+  color: #fff; /* Колір орнаменту */
+}
+.characters-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 персонажі в ряд */
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.character-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.character-image {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.character-name {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
 }

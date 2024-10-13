@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
 .header {
     display: flex;
     flex-direction: column;
@@ -41,9 +43,12 @@
 }
 
 .logo {
+    font-family: 'Cinzel', serif; /* Використання нового шрифту */
     color: #fff;
     font-size: 42px; /* Збільшення розміру логотипу */
-    font-weight: bold;
+    font-weight: bold; /* Товсте начертання */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Тінь для тексту */
+    letter-spacing: 2px; /* Відстань між літерами */
 }
 
 .search-bar {
@@ -102,6 +107,7 @@
 .nav {
     display: flex;
     gap: 20px;
+    
 }
 
 .nav a {
