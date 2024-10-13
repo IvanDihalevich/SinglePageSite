@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 20px 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-section {
+    position: absolute; /* Фіксоване розташування */
+    left: 50%;
+    transform: translateX(-50%); /* Вирівнює по центру горизонтально */
+    text-align: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 42px; /* Збільшення розміру логотипу */
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 6px; /* Вужчі поля для пошуку */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc; /* Задній фон сірий */
+    width: 140px; /* Вужча ширина */
+    height: 10px;
+}
+
+.login {
+    background-color: transparent; /* Прозора кнопка */
+    border: 1px solid rgba(204, 204, 204, 0.75); /* Сіра обводка на 25% прозорості */
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 90px;
+    height: 24px;
+    text-align: center;
+    display: flex; /* Вирівнювання тексту по центру */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Плавна анімація при наведенні */
+}
+
+.login:hover {
+    background-color: rgba(204, 204, 204, 0.75); /* Сірий фон при наведенні з прозорістю 25% */
+}
+
+.signup {
+    background-color: #4b0082;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    width: 90px;
+    height: 24px;
+    text-align: center;
+    display: flex; /* Вирівнювання тексту по центру */
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #61dafb;
+}
