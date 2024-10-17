@@ -38,13 +38,11 @@ const Header = () => (
 
   <div className="bottom-row">
     <nav className="nav">
-      <a href="#">КНИГИ</a>
-      <a href="#">ВІДЕО ПРО ГАРІ ПОТТЕРА</a>
-      <a href="#">ЩОСЬ ТАМ</a>
-      <a href="#">ПЕРСОНАЖІ</a>
-      <a href="#">ЩОСЬ ТАМ</a>
-      <a href="#">J.K. Rowling</a>
-      <a href="#">АВТОР САЙТУ</a>
+      <a href="#books">КНИГИ</a>
+      <a href="#authorOfBooks">J.K. Rowling</a>
+      <a href="#detailsOfBook">ДЕТАЛЬНІШЕ ПРО КНИГИ</a>
+      <a href="#characters">ПЕРСОНАЖІ</a>
+      <a href="#websiteAuthor">АВТОР САЙТУ</a>
     </nav>
   </div>
 </header>

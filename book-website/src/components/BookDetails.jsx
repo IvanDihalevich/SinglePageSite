@@ -27,10 +27,15 @@ import character14 from "../iconsBody/ordemdafenix.png";
 import character15 from "../iconsBody/ginny.png";
 import character16 from "../iconsBody/mcgonagall.png";
 
+import websiteAuthorImage from "../iconsBody/website-author.png";
+import FaTiktok from "../icons/FaTiktok.png";
+import FaTelegram from "../icons/FaTelegram.png";
+import FaInstagram from "../icons/FaInstagram.png";
+
 const BookDetails = () => (
   <div className="book-details">
     <h2>Про книги</h2>
-    <div className="book-content">
+    <div className="book-content" id="books">
       <div className="book-item">
         <img src={bookImage1} alt="Книга 1" className="book-image" />
         <p className="book-description">
@@ -103,7 +108,7 @@ const BookDetails = () => (
 
     <hr className="divider" />
 
-    <div className="author-section">
+    <div className="author-section" id="authorOfBooks">
       <img src={authorImage} alt="Author" className="author-image" />
       <div className="author-description">
         <h3>Автор Дж.К. Роулінг</h3>
@@ -118,10 +123,11 @@ const BookDetails = () => (
 
     <hr className="divider" />
 
-    <div className="section-content">
+    <div className="section-content" id="detailsOfBook">
       <div id="section1" className="section-item">
         <img src={bookImage1} alt="Розділ 1" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і філософський камінь</h3>
           <p>
             Гаррі Поттер ніколи навіть не чув про Гоґвортс, коли листи починають
             падати на дверний килимок під номером чотири, Прайвіт-драйв.
@@ -134,9 +140,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section2" className="section-item">
         <img src={bookImage2} alt="Розділ 2" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і таємна кімната</h3>
           <p>
             Літо Гаррі Поттера включало найгірший день народження в історії,
             страшні попередження від домашнього ельфа на ім’я Доббі та порятунок
@@ -148,9 +156,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section3" className="section-item">
         <img src={bookImage3} alt="Розділ 3" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і в'язень Азкабану</h3>
           <p>
             Коли лицарський автобус проноситься в темряві й з скрипом
             зупиняється перед ним, це означає початок ще одного зовсім не
@@ -163,9 +173,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section4" className="section-item">
         <img src={bookImage4} alt="Розділ 4" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і Кубок вогню</h3>
           <p>
             Турнір трьох чаклунів відбудеться в Гоґвортсі. До участі
             допускаються лише чарівники старше сімнадцяти років, але це не
@@ -178,9 +190,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section5" className="section-item">
         <img src={bookImage5} alt="Розділ 5" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і Орден Фенікса</h3>
           <p>
             У Гоґвортсі настали темні часи. Після нападу дементорів на його
             двоюрідного брата Дадлі Гаррі Поттер знає, що Волдеморт не
@@ -193,9 +207,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section6" className="section-item">
         <img src={bookImage6} alt="Розділ 6" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і напівкровний принц</h3>
           <p>
             Коли Дамблдор одного літнього вечора прибуває на Прівіт-Драйв, щоб
             забрати Гаррі Поттера, рука його чарівної палички почорніла й
@@ -208,9 +224,11 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section7" className="section-item">
         <img src={bookImage7} alt="Розділ 7" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і смертельні реліквії</h3>
           <p>
             Коли Гаррі Поттер сідає в коляску Геґрідового мотоцикла й
             піднімається в небо, востаннє покидаючи Прівет Драйв, він знає, що
@@ -222,32 +240,20 @@ const BookDetails = () => (
           </p>
         </div>
       </div>
+
       <div id="section8" className="section-item">
         <img src={bookImage8} alt="Розділ 8" className="section-image" />
         <div className="section-text">
+          <h3>Гаррі Поттер і прокляте дитя</h3>
           <p>
-            Офіційний сценарій оригінальної постановки Вест-Енду «Гаррі Поттер і
-            прокляте дитя». Завжди було важко бути Гаррі Поттером, і це не
-            набагато легше зараз, коли він перевантажений роботою співробітник
-            Міністерства магії, чоловік і батько трьох дітей шкільного віку.
-            Поки Гаррі бореться з минулим, яке відмовляється залишатися там, де
-            йому належить, його молодшому синові Альбусу доводиться боротися з
-            вагою сімейної спадщини, яку він ніколи не хотів. Коли минуле й
-            сьогодення зловісно зливаються, батько й син дізнаються незручну
-            правду: інколи темрява приходить із несподіваних місць. Сценарій
-            фільму «Гаррі Поттер і прокляте дитя» спочатку був випущений як
-            «спеціальне репетиційне видання» разом із прем’єрою п’єси Джека
-            Торна в лондонському Вест-Енді влітку 2016 року. На основі
-            оригінальної історії Дж.К. Роулінг, Джона Тіффані та Джека Торна,
-            п’єса викликала захоплені рецензії театралів і критиків, а офіційний
-            сценарій одразу став світовим бестселером. Це виправлене видання в
-            м’якій обкладинці оновлює «спеціальне репетиційне видання» заключним
-            і останнім діалогом із п’єси, який дещо змінився після репетицій, а
-            також уривком розмови між режисером Джоном Тіффані та письменником
-            Джеком Торном, які діляться історіями та думками про читання
-            сценаріїв. Це видання також містить корисну довідкову інформацію,
-            включаючи генеалогічне дерево Поттерів і хронологію подій зі світу
-            чарівників до початку «Гаррі Поттера і проклятого дитини».
+            Бути Гаррі Поттером завжди було важко, і зараз, коли він є
+            перевантаженим роботою співробітником Міністерства магії, чоловіком
+            і батьком трьох дітей шкільного віку, для нього стало не набагато
+            легше. Поки Гаррі бореться з минулим, яке відмовляється залишатися
+            там, де йому місце, його молодший син Альбус повинен боротися з
+            вагою сімейної спадщини, якої він ніколи не бажав. Минуле й майбутнє
+            зловісно зливаються воєдино, і батько з сином дізнаються незручну
+            правду: іноді темрява приходить з найнесподіваніших місць.
           </p>
         </div>
       </div>
@@ -255,7 +261,7 @@ const BookDetails = () => (
     <hr className="divider" />
     {/* Characters Section */}
     <h2>Персонажі</h2>
-    <div className="characters-section">
+    <div className="characters-section" id="characters">
       <div className="character-item">
         <img src={character1} alt="Harry Potter" className="character-image" />
         <p className="character-name">Harry Potter</p>
@@ -309,32 +315,86 @@ const BookDetails = () => (
         <p className="character-name">Dobby</p>
       </div>
       <div className="character-item">
-        <img src={character11} alt="Bellatrix Lestrange" className="character-image" />
+        <img
+          src={character11}
+          alt="Bellatrix Lestrange"
+          className="character-image"
+        />
         <p className="character-name">Bellatrix Lestrange</p>
       </div>
       <div className="character-item">
-        <img src={character12} alt="Garrick Ollivander" className="character-image" />
+        <img
+          src={character12}
+          alt="Garrick Ollivander"
+          className="character-image"
+        />
         <p className="character-name">Garrick Ollivander</p>
       </div>
       <div className="character-item">
-        <img src={character13} alt="Lucius Malfoy" className="character-image" />
+        <img
+          src={character13}
+          alt="Lucius Malfoy"
+          className="character-image"
+        />
         <p className="character-name">Lucius Malfoy</p>
       </div>
       <div className="character-item">
-        <img src={character14} alt="Vernon Dursley" className="character-image" />
+        <img
+          src={character14}
+          alt="Vernon Dursley"
+          className="character-image"
+        />
         <p className="character-name">Vernon Dursley</p>
       </div>
       <div className="character-item">
-        <img src={character15} alt="Ginevra Weasley" className="character-image" />
+        <img
+          src={character15}
+          alt="Ginevra Weasley"
+          className="character-image"
+        />
         <p className="character-name">Ginevra Weasley</p>
       </div>
       <div className="character-item">
-        <img src={character16} alt="Minerva McGonagall" className="character-image" />
+        <img
+          src={character16}
+          alt="Minerva McGonagall"
+          className="character-image"
+        />
         <p className="character-name">Minerva McGonagall</p>
       </div>
     </div>
 
     <hr className="divider" />
+    {/* Author of the Website Section */}
+    <div className="website-author-section" id="websiteAuthor">
+      <div className="website-author-description">
+        <h3>Dihalevych Ivan</h3>
+        <p>
+          Це сайт, створений для шанувальників серії книг про Гаррі Поттера. Тут
+          ви знайдете інформацію про книги, персонажів та багато іншого, що
+          стосується чарівного світу, створеного Дж.К. Роулінг.
+        </p>
+
+        {/* Social Media Links */}
+        <div className="social-media-links">
+          <a
+            href="https://www.instagram.com/ivandihalevych/" aria-label="Instagram">
+            <img src={FaInstagram} alt="Instagram" />
+          </a>
+          <a href="https://t.me/okk_ivan" aria-label="Telegram">
+            <img src={FaTelegram} alt="Telegram" />
+          </a>
+          <a href="https://www.tiktok.com/@ivan_dihalevich" aria-label="Tiktok">
+            <img src={FaTiktok} alt="Tiktok" />
+          </a>
+        </div>
+      </div>
+      <img
+        src={websiteAuthorImage}
+        alt="Website Author"
+        className="website-author-image"
+      />
+    </div>
   </div>
 );
 
