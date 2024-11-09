@@ -1,0 +1,131 @@
+/* Основні стилі для музичного плеєра */
+.music-player {
+  background: #121212;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 380px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Заголовок музичного плеєра */
+.music-player h2 {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Стилізація кнопок керування */
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.player-controls button {
+  background-color: transparent;
+  border: none; /* Вилучаємо обводку */
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.player-controls button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Кнопка на ховері */
+.player-controls button:hover img {
+  transform: scale(1.1);
+}
+
+/* Кнопка при натисканні */
+.player-controls button:active img {
+  transform: scale(0.95);
+}
+
+/* Індикатор поточного треку */
+/* Індикатор поточного треку */
+.music-player p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 20px;
+    text-align: center; /* Центруємо текст */
+    width: 100%; /* Встановлюємо ширину для кращого контролю */
+    display: block; /* Параграф займає всю ширину контейнера */
+    margin: 0 auto; /* Додаємо автоматичні відступи для центрування по горизонталі */
+  }
+  
+
+/* Стилізація контейнера з текстом */
+.music-player-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Поділ між секціями */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 30px 0;
+}
+
+/* Стилізація для додаткової інформації */
+.music-player-section p {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 15px;
+  line-height: 1.5;
+  max-width: 320px;
+  text-align: center;
+}
+
+/* Анімація плеєра */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.music-player {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Кнопки для інтерфейсу (мобільна версія) */
+@media (max-width: 500px) {
+  .player-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .music-player {
+    width: 300px;
+    padding: 25px;
+  }
+}

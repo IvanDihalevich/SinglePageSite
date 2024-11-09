@@ -40,9 +40,11 @@ const Header = () => (
     <nav className="nav">
       <a href="#books">КНИГИ</a>
       <a href="#authorOfBooks">J.K. Rowling</a>
+      <a href="#soundTrecs">САУНДТРЕКИ</a>
       <a href="#detailsOfBook">ДЕТАЛЬНІШЕ ПРО КНИГИ</a>
       <a href="#characters">ПЕРСОНАЖІ</a>
       <a href="#websiteAuthor">АВТОР САЙТУ</a>
+
     </nav>
   </div>
 </header>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/BookDetails.css";
+import MusicPlayer from "../hooks/MusicPlayer";
 import bookImage1 from "../iconsBody/rectangle-1.png";
 import bookImage2 from "../iconsBody/rectangle-2.png";
 import bookImage3 from "../iconsBody/rectangle-3.png";
@@ -31,6 +32,7 @@ import websiteAuthorImage from "../iconsBody/website-author.png";
 import FaTiktok from "../icons/FaTiktok.png";
 import FaTelegram from "../icons/FaTelegram.png";
 import FaInstagram from "../icons/FaInstagram.png";
+
 
 const BookDetails = () => (
   <div className="book-details">
@@ -120,6 +122,16 @@ const BookDetails = () => (
         </p>
       </div>
     </div>
+
+    <hr className="divider" />
+
+    <div className="music-section" id="soundTrecs">
+      <div className="music-player-section" id="musicPlayer">
+        <MusicPlayer />
+        <p>Прослухайте саундтрек або атмосферну музику для кращого занурення у чарівний світ.</p>
+      </div>
+    </div>
+
 
     <hr className="divider" />
 
