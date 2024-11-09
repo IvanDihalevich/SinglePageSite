@@ -271,7 +271,7 @@ const BookDetails = () => (
       </div>
     </div>
     <hr className="divider" />
-    {/* Characters Section */}
+
     <h2>Персонажі</h2>
     <div className="characters-section" id="characters">
       <div className="character-item">
@@ -377,7 +377,7 @@ const BookDetails = () => (
     </div>
 
     <hr className="divider" />
-    {/* Author of the Website Section */}
+
     <div className="website-author-section" id="websiteAuthor">
       <div className="website-author-description">
         <h3>Dihalevych Ivan</h3>
@@ -387,7 +387,6 @@ const BookDetails = () => (
           стосується чарівного світу, створеного Дж.К. Роулінг.
         </p>
 
-        {/* Social Media Links */}
         <div className="social-media-links">
           <a
             href="https://www.instagram.com/ivandihalevych/" aria-label="Instagram">

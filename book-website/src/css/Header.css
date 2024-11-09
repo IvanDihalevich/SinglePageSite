@@ -20,9 +20,9 @@
 }
 
 .center-section {
-  position: absolute; /* Фіксоване розташування */
+  position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Вирівнює по центру горизонтально */
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -43,26 +43,26 @@
 }
 
 .logo {
-  font-family: "Cinzel", serif; /* Використання нового шрифту */
+  font-family: "Cinzel", serif;
   color: #fff;
-  font-size: 42px; /* Збільшення розміру логотипу */
-  font-weight: bold; /* Товсте начертання */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Тінь для тексту */
-  letter-spacing: 2px; /* Відстань між літерами */
+  font-size: 42px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
 }
 
 .search-bar {
-  padding: 6px; /* Вужчі поля для пошуку */
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #ccc; /* Задній фон сірий */
-  width: 140px; /* Вужча ширина */
+  background-color: #ccc;
+  width: 140px;
   height: 10px;
 }
 
 .login {
-  background-color: transparent; /* Прозора кнопка */
-  border: 1px solid rgba(204, 204, 204, 0.75); /* Сіра обводка на 25% прозорості */
+  background-color: transparent;
+  border: 1px solid rgba(204, 204, 204, 0.75);
   color: #fff;
   border-radius: 5px;
   padding: 8px 12px;
@@ -71,10 +71,10 @@
   width: 90px;
   height: 24px;
   text-align: center;
-  display: flex; /* Вирівнювання тексту по центру */
+  display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease; /* Плавна анімація при наведенні */
+  transition: background-color 0.3s ease;
 }
 
 .login:hover {
@@ -83,7 +83,7 @@
     204,
     204,
     0.75
-  ); /* Сірий фон при наведенні з прозорістю 25% */
+  );
 }
 
 .signup {
@@ -97,7 +97,7 @@
   width: 90px;
   height: 24px;
   text-align: center;
-  display: flex; /* Вирівнювання тексту по центру */
+  display: flex;
   justify-content: center;
   align-items: center;
 }

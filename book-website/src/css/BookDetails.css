@@ -1,7 +1,7 @@
 .book-details {
-  background-color: #000; /* Чорний фон */
-  color: #fff; /* Білий текст */
-  min-height: 100vh; /* Висота сторінки */
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,11 +27,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease; /* Плавний перехід для ефекту */
+  transition: transform 0.3s ease;
 }
 
 .book-item:hover {
-  transform: scale(1.05); /* Збільшення елементу на 5% при наведенні */
+  transform: scale(1.05);
 }
 
 .book-image {
