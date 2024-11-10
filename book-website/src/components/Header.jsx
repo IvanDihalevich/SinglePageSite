@@ -12,6 +12,8 @@ const Header = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+ 
+
   return (
     <header className="header">
       <div className="top-row">
