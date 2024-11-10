@@ -107,13 +107,23 @@
 }
 
 @media (max-width: 500px) {
-  .player-controls {
-    flex-direction: column;
-    gap: 15px;
+    .player-controls {
+      gap: 15px;
+    }
+  
+    .music-player {
+      width: 300px;
+      padding: 25px;
+    }
+  
+    .player-controls button {
+      width: 50px; /* Adjust the size of the buttons */
+      height: 50px; /* Adjust the size of the buttons */
+    }
+  
+    .player-controls button img {
+      width: 70%; /* Adjust the image size inside the button */
+      height: 70%;
+    }
   }
-
-  .music-player {
-    width: 300px;
-    padding: 25px;
-  }
-}
+  
