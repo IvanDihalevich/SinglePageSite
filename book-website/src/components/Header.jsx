@@ -20,13 +20,19 @@ const Header = () => {
             <a href="https://www.youtube.com/@harrypotter" aria-label="Youtube">
               <img src={FaYoutube} alt="Youtube" />
             </a>
-            <a href="https://www.tiktok.com/discover/HarryPotter" aria-label="Tiktok">
+            <a
+              href="https://www.tiktok.com/discover/HarryPotter"
+              aria-label="Tiktok"
+            >
               <img src={FaTiktok} alt="Tiktok" />
             </a>
             <a href="https://t.me/HarryPotterChanel934" aria-label="Telegram">
               <img src={FaTelegram} alt="Telegram" />
             </a>
-            <a href="https://www.instagram.com/harrypotter/" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/harrypotter/"
+              aria-label="Instagram"
+            >
               <img src={FaInstagram} alt="Instagram" />
             </a>
           </div>
@@ -37,7 +43,6 @@ const Header = () => {
         </div>
 
         <div className="right-section">
-          <input type="text" placeholder="Search" className="search-bar" />
           <button className="login">LOG IN</button>
           <button className="signup">SIGN UP</button>
         </div>
@@ -53,11 +58,12 @@ const Header = () => {
           <a href="#websiteAuthor">АВТОР САЙТУ</a>
         </nav>
 
-        <button className="dropdown-toggle" onClick={toggleDropdown}>
-          ☰ Menu
-        </button>
+        {/* Move the button above the menu */}
         {isDropdownOpen && (
           <div className="dropdown-menu">
+            <button className="dropdown-toggle" onClick={toggleDropdown}>
+              ☰ Menu
+            </button>
             <a href="#books">КНИГИ</a>
             <a href="#authorOfBooks">J.K. Rowling</a>
             <a href="#soundTrecs">САУНДТРЕКИ</a>
@@ -65,6 +71,12 @@ const Header = () => {
             <a href="#characters">ПЕРСОНАЖІ</a>
             <a href="#websiteAuthor">АВТОР САЙТУ</a>
           </div>
+        )}
+
+        {!isDropdownOpen && (
+          <button className="dropdown-toggle" onClick={toggleDropdown}>
+            ☰ Menu
+          </button>
         )}
       </div>
     </header>

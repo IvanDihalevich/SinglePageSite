@@ -5,7 +5,6 @@ import Header from './components/Header';
 import BookDetails from './components/BookDetails';
 import Footer from './components/Footer';
 import './App.css';
-import 'font-awesome/css/font-awesome.min.css';
 
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
             <img src={logo} className="App-logo" alt="logo" />
             <main>
                 <BookDetails />
-                {/* Тут можна додати інші секції */}
+                
             </main>
             <Footer />
         </div>
