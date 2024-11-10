@@ -8,6 +8,6 @@ const Footer = () => (
             <p className="footer-text">&copy; 2024 Всі права захищено</p>
         </div>
     </footer>
-);
+)
 
 export default Footer;

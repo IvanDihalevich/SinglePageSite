@@ -1,0 +1,21 @@
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+    }
+  }
+  
