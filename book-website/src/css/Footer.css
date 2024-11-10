@@ -1,10 +1,41 @@
+.footer {
+  background-color: #1c1c1c;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin: 0;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 15px;
   }
 
+  .footer-content {
+    gap: 8px;
+    padding: 0 15px;
+  }
+
   .footer-text {
     font-size: 14px;
+    white-space: normal;
+    text-align: center;
   }
 }
 
