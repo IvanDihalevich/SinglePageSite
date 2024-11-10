@@ -102,7 +102,6 @@
   color: #61dafb;
 }
 
-/* Hide dropdown-toggle by default */
 .dropdown-toggle {
   display: none;
   background: none;
@@ -138,12 +137,10 @@
   background-color: #61dafb;
 }
 
-/* Adjust when the menu is open */
 .dropdown-menu.open {
   display: flex;
 }
 
-/* Center the dropdown in mobile view */
 @media (max-width: 768px) {
   .top-row {
     flex-direction: column;

@@ -33,7 +33,6 @@ import FaTiktok from "../icons/FaTiktok.png";
 import FaTelegram from "../icons/FaTelegram.png";
 import FaInstagram from "../icons/FaInstagram.png";
 
-
 const BookDetails = () => (
   <div className="book-details">
     <h2>Про книги</h2>
@@ -128,10 +127,12 @@ const BookDetails = () => (
     <div className="music-section" id="soundTrecs">
       <div className="music-player-section" id="musicPlayer">
         <MusicPlayer />
-        <p>Прослухайте саундтрек або атмосферну музику для кращого занурення у чарівний світ.</p>
+        <p>
+          Прослухайте саундтрек або атмосферну музику для кращого занурення у
+          чарівний світ.
+        </p>
       </div>
     </div>
-
 
     <hr className="divider" />
 
@@ -389,7 +390,9 @@ const BookDetails = () => (
 
         <div className="social-media-links">
           <a
-            href="https://www.instagram.com/ivandihalevych/" aria-label="Instagram">
+            href="https://www.instagram.com/ivandihalevych/"
+            aria-label="Instagram"
+          >
             <img src={FaInstagram} alt="Instagram" />
           </a>
           <a href="https://t.me/okk_ivan" aria-label="Telegram">

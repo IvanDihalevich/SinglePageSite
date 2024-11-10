@@ -1,24 +1,23 @@
-/* src/App.css */
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Чорний фон для всього додатка */
-  color: #fff; /* Білий текст для покращення видимості на чорному фоні */
-  min-height: 100vh; /* Мінімальна висота, щоб зайняти всю видиму частину вікна */
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #1a1a1a; /* Темніший фон для хедера */
+  background-color: #1a1a1a;
   padding: 10px 0;
-  border-bottom: 1px solid #444; /* Темніша рамка */
+  border-bottom: 1px solid #444;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #fff; /* Білий текст для навігаційних посилань */
+  color: #fff;
 }
 
 main {
@@ -26,11 +25,11 @@ main {
 }
 
 footer {
-  background-color: #1a1a1a; /* Темніший фон для футера */
+  background-color: #1a1a1a;
   padding: 10px 0;
-  border-top: 1px solid #444; /* Темніша рамка */
+  border-top: 1px solid #444;
   width: 100%;
-  color: #fff; /* Білий текст для футера */
-  position: relative; /* Відновлено до стандартного поведінки */
-  margin-top: auto; /* Додано для того, щоб футер завжди був внизу, якщо контент невеликий */
+  color: #fff;
+  position: relative;
+  margin-top: auto;
 }

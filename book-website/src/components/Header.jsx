@@ -12,8 +12,6 @@ const Header = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
- 
-
   return (
     <header className="header">
       <div className="top-row">
@@ -60,7 +58,6 @@ const Header = () => {
           <a href="#websiteAuthor">АВТОР САЙТУ</a>
         </nav>
 
-        {/* Move the button above the menu */}
         {isDropdownOpen && (
           <div className="dropdown-menu">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
